@@ -16,7 +16,7 @@ Cette application écoute les webhooks envoyés par Petzi lors d'une vente de ti
 ## 🚀 Installation
 
 ### **1️⃣ Cloner le projet**
-git clone https://github.com/ton_pseudo/petzi_webhook.git
+git clone https://github.com/MelissaMandeleu/petzi_webhook.git
 cd petzi_webhook
 
 2️⃣ Lancer avec Docker
