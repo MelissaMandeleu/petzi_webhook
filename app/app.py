@@ -3,6 +3,8 @@ import psycopg2
 import hmac
 import hashlib
 import json
+##from db import init_db
+
 
 app = Flask(__name__, template_folder="templates")
 
@@ -136,6 +138,10 @@ def afficher_tickets():
     finally:
         cursor.close()
         conn.close()
+
+##if __name__ == '__main__':
+    init_db()  # S'assure que la table existe avant de démarrer le serveur Flask
+    app.run(debug=True, port=5000)
 
 if __name__ == '__main__':
     app.run(debug=True, port=5000)
