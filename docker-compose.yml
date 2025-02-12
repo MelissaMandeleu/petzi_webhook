@@ -1,0 +1,31 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres:latest
+    container_name: petzi_postgres
+    restart: always
+    environment:
+      POSTGRES_USER: petzi
+      POSTGRES_PASSWORD: petzi_password
+      POSTGRES_DB: petzi_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  web:
+    build: .
+    container_name: petzi_webhook_app
+    restart: always
+    depends_on:
+      - db
+    ports:
+      - "5000:5000"
+    environment:
+      DATABASE_URL: postgresql://petzi:petzi_password@db:5432/petzi_db
+    volumes:
+      - .:/app
+
+volumes:
+  postgres_data:
