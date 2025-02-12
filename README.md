@@ -26,7 +26,7 @@ Avant de commencer, assurez-vous d'avoir installé :
 ---
 
 ### 🔹 2️⃣ **Cloner le projet**
-- **git** clone https://github.com/ton-utilisateur/petzi_webhook_app.git
+- **git** clone https://github.com/MelissaMandeleu/petzi_webhook.git
 - **cd** petzi_webhook_app
 ---
 
