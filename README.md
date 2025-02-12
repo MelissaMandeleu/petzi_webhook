@@ -3,11 +3,13 @@
 Ce projet permet de recevoir et enregistrer automatiquement les ventes de billets via les webhooks de Petzi et de les stocker dans une base de données PostgreSQL.
 
 💡 Fonctionnalités :
-✅ Réception et stockage des webhooks Petzi 🎫
-✅ Vérification de l’authenticité des requêtes 🔐
-✅ Sauvegarde dans une base PostgreSQL 💾
-✅ Interface Web Flask pour voir les tickets vendus 🖥️
+
+✅ Réception et stockage des webhooks Petzi 🎫 
+✅ Vérification de l’authenticité des requêtes 🔐 
+✅ Sauvegarde dans une base PostgreSQL 💾 
+✅ Interface Web Flask pour voir les tickets vendus 🖥️ 
 ✅ Déploiement automatisé via Docker 🐳
+
 
 📌 1️⃣ Prérequis
 Avant de commencer, vous devez installer :
